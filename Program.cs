@@ -11,7 +11,7 @@
                 string cookie = Console.ReadLine();
                 cookies.Add(cookie);
             }
-            //create method that deletes a given cookie from the list if it exists
+            
             //create method that adds a given cookie to the list if is doesnt exist 
             //create method that gives all the cookies from the list
             
@@ -25,6 +25,17 @@
             else
             {
              Console.WriteLine("There is no such cookie in the cookie box!");
+            }
+        }
+        static void AddCookie(string cookieName)
+        {
+            if(!cookies.Contains(cookieName))
+            {
+                cookies.Add(cookieName);
+            }
+            else
+            {
+                COnsole.WriteLine("This cookie already exists in the cookie box!");
             }
         }
     }
