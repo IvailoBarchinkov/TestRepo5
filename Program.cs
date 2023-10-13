@@ -10,8 +10,12 @@
             {
                 string cookie = Console.ReadLine();
                 cookies.Add(cookie);
-            }                    
-            //create method that gives all the cookies from the list
+            }       
+            string cookieToDelete = Console.ReadLine();
+            string cookieToAdd = Console.ReadLine();
+            DeleteCookie(cookieToDelete);
+            AddCookie(cookieToAdd);
+            ListCookies();
             
         }
         static void DeleteCookie(string cookieName)
@@ -35,6 +39,10 @@
             {
                 COnsole.WriteLine("This cookie already exists in the cookie box!");
             }
+        }
+        static void ListCookies()
+        {
+            Console.WriteLine(string.Join(", ", cookies));
         }
     }
 }
