@@ -10,9 +10,7 @@
             {
                 string cookie = Console.ReadLine();
                 cookies.Add(cookie);
-            }
-            
-            //create method that adds a given cookie to the list if is doesnt exist 
+            }                    
             //create method that gives all the cookies from the list
             
         }
