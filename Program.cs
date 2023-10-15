@@ -18,6 +18,7 @@
             ListCookies();
             
         }
+
         static void DeleteCookie(string cookieName)
         {
             if(cookies.Contains(cookieName))
@@ -29,6 +30,7 @@
              Console.WriteLine("There is no such cookie in the cookie box!");
             }
         }
+
         static void AddCookie(string cookieName)
         {
             if(!cookies.Contains(cookieName))
@@ -40,6 +42,7 @@
                 COnsole.WriteLine("This cookie already exists in the cookie box!");
             }
         }
+        
         static void ListCookies()
         {
             Console.WriteLine(string.Join(", ", cookies));
